@@ -5,7 +5,7 @@ generator client {
 datasource db {
   provider          = "postgresql"
   url               = env("DATABASE_URL")
-  // Used by `prisma migrate dev` only. Managed DB users often lack CREATEDB -> use local Postgres (see .env.example, docker-compose.yml).
+  // Used by `prisma migrate dev` only. Managed DB users often lack CREATEDB 
   shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
 }
 
